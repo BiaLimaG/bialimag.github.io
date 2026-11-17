@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beatriz Lima Galo | 3D Artist</title>
+<meta name="description" content="Portfolio of Beatriz Lima Galo, 3D artist for games: characters, environments and props.">
+<style>
+  :root { --bg:#111214; --panel:#1a1b1f; --line:#2a2c31; --text:#e8e6e1; --muted:#9a978f; --accent:#d9a441; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font:16px/1.6 "Helvetica Neue", Arial, sans-serif; }
+  a { color:inherit; }
+  header { position:sticky; top:0; background:rgba(17,18,20,.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); z-index:10; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+  nav { display:flex; justify-content:space-between; align-items:center; height:64px; }
+  .logo { font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:14px; text-decoration:none; }
+  .logo span { color:var(--accent); }
+  nav ul { display:flex; gap:28px; list-style:none; font-size:14px; }
+  nav ul a { text-decoration:none; color:var(--muted); }
+  nav ul a:hover { color:var(--text); }
+  .hero { padding:110px 0 80px; border-bottom:1px solid var(--line); }
+  .hero p.kicker { color:var(--accent); font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:14px; }
+  .hero h1 { font-size:clamp(40px, 7vw, 76px); line-height:1.02; font-weight:700; letter-spacing:-.02em; }
+  .hero p.sub { color:var(--muted); max-width:520px; margin-top:20px; font-size:18px; }
+  section { padding:80px 0; border-bottom:1px solid var(--line); }
+  h2 { font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:32px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:20px; }
+  .piece { background:var(--panel); border:1px solid var(--line); }
+  .thumb { aspect-ratio:4/3; background:#202227; display:flex; align-items:center; justify-content:center; color:#55575d; font-size:13px; }
+  .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+  .info { padding:16px 18px 18px; }
+  .info h3 { font-size:17px; margin-bottom:6px; }
+  .specs { font-size:13px; color:var(--muted); }
+  .reel { aspect-ratio:16/9; background:var(--panel); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:#55575d; }
+  .reel iframe { width:100%; height:100%; border:0; }
+  .about { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  .about p { color:var(--muted); margin-bottom:14px; }
+  .tools { display:flex; flex-wrap:wrap; gap:8px; }
+  .tools li { list-style:none; border:1px solid var(--line); padding:6px 12px; font-size:13px; }
+  .contact a.big { font-size:clamp(22px, 4vw, 36px); text-decoration:none; border-bottom:2px solid var(--accent); }
+  footer { padding:32px 0; color:#5c5e63; font-size:13px; }
+  @media (max-width:700px) { nav ul { gap:16px; } .about { grid-template-columns:1fr; } .hero { padding:72px 0 56px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#">Beatriz <span>Lima Galo</span></a>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#reel">Reel</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="kicker">3D Artist for Games</p>
+    <h1>Beatriz<br>Lima Galo</h1>
+    <p class="sub">Characters, environments and props. Game Development student at George Brown College, Toronto.</p>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected Work</h2>
+    <div class="grid">
+      <div class="piece">
+        <div class="thumb">Render coming soon</div>
+        <div class="info">
+          <h3>Character Model</h3>
+          <p class="specs">Software &middot; Tris &middot; Texture size</p>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="thumb">Render coming soon</div>
+        <div class="info">
+          <h3>Environment Scene</h3>
+          <p class="specs">Software &middot; Tris &middot; Texture size</p>
+        </div>
+      </div>
+      <div class="piece">
+        <div class="thumb">Render coming soon</div>
+        <div class="info">
+          <h3>Prop Set</h3>
+          <p class="specs">Software &middot; Tris &middot; Texture size</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reel">
+  <div class="wrap">
+    <h2>Demo Reel</h2>
+    <div class="reel">Demo reel coming soon</div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About</h2>
+      <p>I'm a 3D artist studying Game Development at George Brown College. I model characters, environments and props for real-time games.</p>
+    </div>
+    <div>
+      <h2>Tools</h2>
+      <ul class="tools">
+        <li>Blender</li>
+        <li>Maya</li>
+        <li>ZBrush</li>
+        <li>Substance Painter</li>
+        <li>Unreal Engine</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <a class="big" href="https://github.com/BiaLimaG">github.com/BiaLimaG</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; 2026 Beatriz Lima Galo</div>
+</footer>
+
+</body>
+</html>
